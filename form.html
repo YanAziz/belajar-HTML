@@ -52,5 +52,32 @@
 
         </form>
     </div>
+
+    <hr>
+
+    <div>
+        <h1>Pesanan</h1>
+        <form action="/order">
+            <div>
+                <label for="">Baju</label>
+                <input type="radio" name="baju" id="" value="kemeja" checked> <label for="">Kemeja</label>
+                <input type="radio" name="baju" id="" value="kaos" checked> <label for="">Kaos</label>
+            </div>
+            <div>
+                <label for="ukuran">Ukuran</label>
+                <select name="ukuran" id="ukuran">
+                    <option>-</option>
+                    <option value="s" selected>Small</option>
+                    <option value="m" selected>Medium</option>
+                    <option value="l" selected>Large</option>
+                </select>
+            </div>
+            <div>
+                <label for="term">Setuju</label>
+                <input type="checkbox" name="term" id="term">
+            </div>
+                <button type="submit">Order</button>
+        </form>
+    </div>
 </body>
 </html>
